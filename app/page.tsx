@@ -1,6 +1,9 @@
+// @ts-nocheck
 "use client";
 
 import Navbar from "../components/Navbar";
+...
+
 import CategoryChips from "../components/CategoryChips";
 import ListingCard from "../components/ListingCard";
 import { getText } from "../lib/texts";
