@@ -1,4 +1,4 @@
-export default function ListingCard({ item, lang }) {
+export default function ListingCard({ item, lang }: { item: any; lang: string }) {
   const title = lang === "ar" ? item.title_ar : item.title_en || item.title_ar;
   const city = lang === "ar" ? item.city : item.city_en || item.city;
 
