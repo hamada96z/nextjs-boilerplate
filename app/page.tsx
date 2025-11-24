@@ -27,7 +27,7 @@ export default function HomePage() {
     });
   }, [q, cat]);
 
-  function updateParam(key, value) {
+  function updateParam(key: string, value: string) {
     const params = new URLSearchParams(searchParams.toString());
     if (value) params.set(key, value);
     else params.delete(key);
@@ -35,7 +35,10 @@ export default function HomePage() {
   }
 
   return (
-    <div className={lang === "ar" ? "font-sans" : "font-sans"} dir={lang === "ar" ? "rtl" : "ltr"}>
+    <div
+      className="font-sans"
+      dir={lang === "ar" ? "rtl" : "ltr"}
+    >
       <Navbar />
 
       <main className="max-w-5xl mx-auto px-4 py-6 space-y-6">
