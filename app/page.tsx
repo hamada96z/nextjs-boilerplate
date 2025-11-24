@@ -68,11 +68,12 @@ export default function HomePage() {
           <div className="flex items-center justify-between">
             <h2 className="text-sm font-semibold text-gray-700">{t.categories}</h2>
           </div>
-          <CategoryChips
-            lang={lang}
-            activeId={cat}
-            onChange={(newCat) => updateParam("cat", newCat)}
-          />
+         <CategoryChips
+  lang={lang}
+  activeId={cat}
+  onChange={(newCat: string) => updateParam("cat", newCat)}
+/>
+
         </section>
 
         {/* Listings */}
